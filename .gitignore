@@ -63,8 +63,8 @@ venv/
 # Django
 ###migrations/
 db.sqlite3
-settings.py
-manage.py
+###settings.py
+###manage.py
 
 # C extensions
 *.so
