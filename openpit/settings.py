@@ -137,7 +137,6 @@ db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
 DATABASES['default'].update(db_from_env)
 #if os.environ.get('ENV') == 'HEROKU' or 'heroku' in os.environ.get('PATH'):
 #    DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
-DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -151,3 +150,5 @@ GDAL_LIBRARY_PATH = '/app/.heroku/vendor/lib/libgdal.so' if os.environ.get('ENV'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
