@@ -1,0 +1,8 @@
+pyflakes
+pep8
+pylint
+ipython
+mypy
+sphinx
+sphinx-rtd-theme
+django-stubs

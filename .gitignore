@@ -1,0 +1,149 @@
+# author: shmakovpn <shmakovpn@yandex.ru>
+# date: 2020-07-30
+
+# IDEs & stuff
+.idea/
+cache/
+gunicorn_start
+CHACHE/
+.vs/
+#  ng new
+.project 
+#  ng new
+.classpath 
+#  ng new
+.c9/ 
+#  ng new
+*.launch 
+#  ng new
+.settings/ 
+#  ng new
+*.sublime-workplace 
+
+# IDE - VSCode
+#  ng new
+.vscode/ 
+#  ng new
+!.vscode/settings.json 
+#  ng new
+!.vscode/tasks.json 
+#  ng new
+!.vscode/launch.json 
+#  ng new
+!.vscode/extensions.json 
+.history/*
+
+# misc
+#  ng new
+/.sass-cache 
+#  ng new
+/connect.lock 
+#  ng new
+/coverage 
+#  ng new
+/libpeerconnection.log 
+#  ng new
+npm-debug.log 
+#  ng new
+yarn-error.log 
+#  ng new
+testem.log 
+# /typings # ng new
+
+# python
+*.pyc
+__pychache__/
+*.egg-info/
+.eggs/
+.Python
+
+# virtualenv
+venv/
+
+# Django
+###migrations/
+db.sqlite3
+settings.py
+manage.py
+
+# C extensions
+*.so
+
+# build, compiled output
+env/
+build/
+sdist/
+#  ng new
+/dist 
+#  ng new
+/tmp 
+#  ng new
+/out-tsc 
+#  ng new, only exists if Bazel was run
+/bazel-out 
+
+# dependencies
+#  ng new
+/node_modules 
+
+# profiling files
+#  ng new
+chrome-profiler-events*.json 
+#  ng new
+speed-measure-plugin*.json 
+
+
+
+# sphinx 
+docs/build/html/
+docs/build/doctrees/
+_build/
+_static/
+_templates/
+
+# codecov
+.coverage
+
+# pytest
+.pytest_cache/
+
+# vim swp
+*.swp
+
+# sensitive data
+secret/
+
+# Linux packages
+*.deb
+*.rpm
+
+# System Files
+#  ng new
+.DS_Store 
+#  ng new
+Thumbs.db 
+
+# some temporary file
+temp.py
+temp.html
+temp.txt
+temp.csv
+notes
+
+# some logs
+debug.log
+geckodriver.log
+
+# selenuim
+chromedriver.exe
+chromedriver
+geckodriver
+geckodriver.exe
+
+# cloud clients
+.insyncdl
+
+# npm lock 
+package-lock.json
+
+/.mypy_cache

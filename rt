@@ -1,0 +1,8 @@
+#!/bin/bash
+DJANGO_SETTINGS_MODULE='openpit.settings'
+
+echo "Run mypy"
+./run_mypy.sh
+
+echo "Run test"
+python manage.py test

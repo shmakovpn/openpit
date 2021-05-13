@@ -1,0 +1,23 @@
+{% extends "pit/base.html" %}
+
+{% block title %}
+    OpenPit - Репорт
+{% endblock %}
+
+{% block content %}
+    <div>Таблица 2</div>
+    <table>
+        <th>Название склада</th>
+        <th>Объем до разгрузки, т</th>
+        <th>Объем после разгрузки, т</th>
+        <th>Качественные хар-ки после разгрузки</th>
+    {% for record in report %}
+        <tr>
+            <td>{{ record.title }}</td>
+            <td>{{ record.weight_before }}</td>
+            <td>{{ record.sum_weight_after }}</td>
+            <td>{{ record.quality_after }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

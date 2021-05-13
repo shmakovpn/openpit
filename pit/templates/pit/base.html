@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'pit/favicon.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'pit/style.css' %}" />
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+
+    {% block reset %}
+        <hr />
+        <form action="{% url 'reset' %}">
+            <input type="submit" value="Сбросить задачу на начальные значения">
+        </form>
+    {% endblock %}
+
+    <script src="{% static 'pit/main.js' %}"></script>
+</body>
+</html>
