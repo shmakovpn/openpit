@@ -141,5 +141,10 @@ DATABASES['default'].update(db_from_env)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# https://stackoverflow.com/questions/53250766/geodjango-on-heroku
+GEOS_LIBRARY_PATH = '/app/.heroku/vendor/lib/libgeos_c.so' if os.environ.get('ENV') == 'HEROKU' else os.getenv('GEOS_LIBRARY_PATH')
+GDAL_LIBRARY_PATH = '/app/.heroku/vendor/lib/libgdal.so' if os.environ.get('ENV') == 'HEROKU' else os.getenv('GDAL_LIBRARY_PATH')
+
+
 # Activate Django-Heroku.
 django_heroku.settings(locals())
