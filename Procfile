@@ -1,0 +1,1 @@
+web: gunicorn openpit.wsgi --log-file -
