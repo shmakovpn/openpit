@@ -147,3 +147,6 @@ geckodriver.exe
 package-lock.json
 
 /.mypy_cache
+
+staticfiles/
+!staticfiles/.gitkeep 
